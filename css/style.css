@@ -61,8 +61,59 @@ body {
 	margin-right: -10px;
 }
 
+
 @media (min-width: 768px) {
-  .hope__inner {
-    display: flex;
-  }
+
+	.main-nav__list{
+		display: flex;
+		flex-wrap: wrap; 
+	}
+
+	.promo {
+		padding-left: 50%;
+		background: gold url(../img/hope.jpg) center no-repeat;
+		background-size: cover;
+	}
+	.hope__inner {
+		display: flex;
+		flex-direction: row;
+	}
+	.hope__image {
+		flex-basis: 50%;
+		flex-shrink: 0; 
+		order: 0;
+	}
+
+  	.news-list {
+	    display: flex;
+	    flex-wrap: wrap;
+	    padding-left: 5px;
+	  	padding-right: 5px;
+	  }
+
+  	.new {
+	  	width: 33.333334%;
+	  	padding-left: 5px;
+	  	padding-right: 5px;
+	  }
+	.new:not(:first-child) {
+		display: block;
+		}
+	
+	.new__img {
+		margin-left: 0;
+		margin-right: 0;
+		}
 }
+
+@media (min-width: 1200px) {
+
+	.page-header,
+	.new,
+	.news-list {
+		width: 1180px;
+		margin: auto;
+	}
+
+}
+
